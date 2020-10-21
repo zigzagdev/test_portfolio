@@ -31,8 +31,8 @@ jobs:
           key: gem-dependencies-{{ checksum "Gemfile.lock" }}
 
       ## Node Packages
-      - restore_cache:
-          key: npm-dependencies-{{ checksum "yarn.lock" }}
+#      - restore_cache:
+#          key: npm-dependencies-{{ checksum "yarn.lock" }}
       - run:
           name: install npm dependencies
           command: |
