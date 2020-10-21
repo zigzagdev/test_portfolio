@@ -1,0 +1,98 @@
+inherit_from: .rubocop_todo.yml
+
+require:
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'bin/*'
+    - 'db/schema.rb'
+
+AsciiComments:
+  Enabled: false
+
+######### Rails ##########
+
+RSpec/FilePath:
+  Enabled: false
+#Rails/UnknownEnv:
+#  Environments:
+#    - production
+#    - development
+#    - test
+#  Enabled: false
+Rails/HttpStatus:
+  Enabled: false
+
+######### Metrics ##########
+Metrics/ClassLength:
+  Max: 300
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*'
+    - 'db/migrate/*'
+Metrics/MethodLength:
+  Max: 30
+  Exclude:
+    - 'db/migrate/*'
+Metrics/AbcSize:
+  Max: 25
+  Exclude:
+    - 'db/migrate/*'
+Metrics/PerceivedComplexity:
+  Max: 10
+Metrics/CyclomaticComplexity:
+  Max: 10
+Metrics/BlockLength:
+  Max: 50
+  Exclude:
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'spec/**/*'
+
+######### Layout ##########
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+
+######### Naming ##########
+Naming/VariableNumber:
+  Enabled: false
+Naming/MethodParameterName:
+  Enabled: false
+
+######### Rspec ##########
+RSpec/LetSetup:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Max: 5
+  Exclude:
+    - 'spec/features/*'
+  Enabled: false
+RSpec/ExampleLength:
+  Max: 15
+  Exclude:
+    - 'spec/features/*'
+RSpec/NestedGroups:
+  Enabled: false
+  Max: 20
+RSpec/BeEql:
+  Enabled: false
+RSpec/EmptyLineAfterFinalLet:
+  Enabled: false
+RSpec/EmptyLineAfterSubject:
+  Enabled: false
+RSpec/ContextWording:
+  Enabled: false
+RSpec/ExpectChange:
+  Enabled: false
+RSpec/HookArgument:
+  EnforcedStyle: each
+RSpec/PredicateMatcher:
+  Enabled: false
