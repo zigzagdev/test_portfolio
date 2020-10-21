@@ -1,8 +1,8 @@
-# MySQL. Versions 5.5.8 and up are supported.
+# MySQL. Versions 5.1.10 and up are supported.
 #
 # Install the MySQL driver
 #   gem install mysql2
-#export PATH="/usr/local/opt/ruby/bin:$PATH"
+#
 # Ensure the MySQL gem is defined in your Gemfile
 #   gem 'mysql2'
 #
@@ -13,9 +13,10 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: <%= ENV.fetch("DB_HOST") { 'localhost' } %>
   username: <%= ENV.fetch("DB_USERNAME") { 'root'  } %>
   password: <%= ENV.fetch("DB_PASSWORD") { ''  } %>
-  socket: /tmp/mysql.sock
+
 development:
   <<: *default
   database: test_portfolio_development
@@ -27,12 +28,12 @@ test:
   <<: *default
   database: test_portfolio_test
 
-# As with config/credentials.yml, you never want to store sensitive information,
+# As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
 #
 # Instead, provide the password as a unix environment variable when you boot
-# the app. Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
+# the app. Read http://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full rundown on how to provide these environment variables in a
 # production deployment.
 #
@@ -50,4 +51,4 @@ production:
   <<: *default
   database: test_portfolio_production
   username: test_portfolio
-  password: <%= ENV['TEST_PORTFOLIO_DATABASE_PASSWORD'] %>
+  password: <%= ENV['WIMAX_BBS_DATABASE_PASSWORD'] %>
