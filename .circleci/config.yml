@@ -73,7 +73,7 @@ jobs:
   rubocop:
     <<: *defaults
     docker:
-      - image: circleci/ruby:2.5.3-node-browsers
+      - image: circleci/ruby:2.6.3-node-browsers
     steps:
       - checkout
       - *restore_gem_cache
