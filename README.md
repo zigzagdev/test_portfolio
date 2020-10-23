@@ -5,7 +5,8 @@ built with
 
 Ruby version 2.6.3   Rails 2.6.5
 
-circleci  
+動作テスト　circleci  
+仮想コンテナ　docker Webサーバー　Nginx UNicorn
+Front React-native 
 
-docker
-React-native  
+デプロイ環境　AWS
