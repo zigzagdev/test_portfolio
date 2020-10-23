@@ -13,7 +13,7 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: <%= ENV.fetch("DB_HOST") { 'localhost' } %>
+  host: localhost
   username: <%= ENV.fetch("DB_USERNAME") { 'root'  } %>
   password: <%= ENV.fetch("DB_PASSWORD") { ''  } %>
 
@@ -51,4 +51,4 @@ production:
   <<: *default
   database: test_portfolio_production
   username: test_portfolio
-  password: <%= ENV['WIMAX_BBS_DATABASE_PASSWORD'] %>
+  password: <%= ENV['TEST_PORTFOLIO_DATABASE_PASSWORD'] %>
