@@ -49,3 +49,4 @@ gem 'rubocop-performance', '~> 1.8', '>= 1.8.1'
 gem 'rubocop-rails', '~> 2.8', '>= 2.8.1'
 gem 'rubocop-rspec', '~> 1.43', '>= 1.43.2'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
