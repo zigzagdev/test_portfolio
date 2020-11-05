@@ -1,5 +1,5 @@
 current directory: /Users/ogiwaramasatoshi/test_portfolio/test_portfolio/vendor/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20201020-3910-5xsye0.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20201031-84435-89zwnh.rb extconf.rb --with-ldflags\=-L/usr/local/opt/openssl@1.1/lib
 checking for rb_absint_size()... yes
 checking for rb_absint_singlebit_p()... yes
 checking for rb_wait_for_single_fd()... yes
@@ -21,12 +21,9 @@ checking for SERVER_QUERY_NO_INDEX_USED in mysql.h... yes
 checking for SERVER_QUERY_WAS_SLOW in mysql.h... yes
 checking for MYSQL_OPTION_MULTI_STATEMENTS_ON in mysql.h... yes
 checking for MYSQL_OPTION_MULTI_STATEMENTS_OFF in mysql.h... yes
-checking for my_bool in mysql.h... no
+checking for my_bool in mysql.h... yes
 -----
-Don't know how to set rpath on your system, if MySQL libraries are not in path mysql2 may not load
------
------
-Setting libpath to /usr/local/Cellar/mysql/8.0.21_1/lib
+Setting rpath to /usr/local/Cellar/mysql@5.7/5.7.32/lib
 -----
 creating Makefile
 
@@ -41,9 +38,7 @@ compiling mysql2_ext.c
 compiling result.c
 compiling statement.c
 linking shared-object mysql2/mysql2.bundle
-ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.Internal.sdk/usr/local/lib'
-ld: library not found for -lssl
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [mysql2.bundle] Error 1
 
-make failed, exit code 2
+current directory: /Users/ogiwaramasatoshi/test_portfolio/test_portfolio/vendor/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 mysql2.bundle ./.gem.20201031-84435-5kfqwz/mysql2
