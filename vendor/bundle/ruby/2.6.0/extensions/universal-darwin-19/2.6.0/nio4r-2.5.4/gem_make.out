@@ -1,5 +1,5 @@
 current directory: /Users/ogiwaramasatoshi/test_portfolio/test_portfolio/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.4/ext/nio4r
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20201031-84435-1gr4ktp.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20201107-88295-1l3w3yf.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for sys/select.h... yes
@@ -254,4 +254,4 @@ ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/
 
 current directory: /Users/ogiwaramasatoshi/test_portfolio/test_portfolio/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.4/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20201031-84435-9e4h0q
+/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20201107-88295-19yzp3k
