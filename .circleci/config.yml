@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: 2
 references:
   default: &defaults
@@ -99,3 +100,20 @@ workflows:
       - rubocop:
           requires:
             - build
+=======
+version: 2.1
+orbs:
+  ruby: circleci/ruby@0.1.2 
+
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6.3-stretch-node
+    executor: ruby/default
+    steps:
+      - checkout
+      - run:
+          name: Which bundler?
+          command: bundle -v
+      - ruby/bundle-install
+>>>>>>> b52f89702b5be4879b199dc13e91981e564af4f3

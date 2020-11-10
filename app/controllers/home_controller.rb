@@ -2,6 +2,6 @@
 # モデル基底クラス
 class IndexController < ApplicationController
   def index
-    @test= {name: 'test1234'}
+    @test = { name: 'test1234' }
   end
 end
