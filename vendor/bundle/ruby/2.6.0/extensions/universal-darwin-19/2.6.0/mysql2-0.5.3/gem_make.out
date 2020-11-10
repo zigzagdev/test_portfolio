@@ -1,5 +1,5 @@
 current directory: /Users/ogiwaramasatoshi/test_portfolio/test_portfolio/vendor/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20201031-84435-89zwnh.rb extconf.rb --with-ldflags\=-L/usr/local/opt/openssl@1.1/lib
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20201107-88295-1265921.rb extconf.rb --with-ldflags\=-L/usr/local/opt/openssl@1.1/lib
 checking for rb_absint_size()... yes
 checking for rb_absint_singlebit_p()... yes
 checking for rb_wait_for_single_fd()... yes
@@ -21,9 +21,9 @@ checking for SERVER_QUERY_NO_INDEX_USED in mysql.h... yes
 checking for SERVER_QUERY_WAS_SLOW in mysql.h... yes
 checking for MYSQL_OPTION_MULTI_STATEMENTS_ON in mysql.h... yes
 checking for MYSQL_OPTION_MULTI_STATEMENTS_OFF in mysql.h... yes
-checking for my_bool in mysql.h... yes
+checking for my_bool in mysql.h... no
 -----
-Setting rpath to /usr/local/Cellar/mysql@5.7/5.7.32/lib
+Setting rpath to /usr/local/Cellar/mysql/8.0.22/lib
 -----
 creating Makefile
 
@@ -41,4 +41,4 @@ linking shared-object mysql2/mysql2.bundle
 
 current directory: /Users/ogiwaramasatoshi/test_portfolio/test_portfolio/vendor/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 mysql2.bundle ./.gem.20201031-84435-5kfqwz/mysql2
+/usr/bin/install -c -m 0755 mysql2.bundle ./.gem.20201107-88295-wlziwc/mysql2
