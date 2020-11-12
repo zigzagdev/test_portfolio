@@ -44,7 +44,7 @@ jobs:
       DB_USERNAME: 'root'
       DB_PASSWORD: ''
     docker:
-      - image: circleci/ruby:2.5.3-node-browsers
+      - image: circleci/ruby:2.6.3-node-browsers
       - image: circleci/mysql:5.7
     steps:
       - checkout
