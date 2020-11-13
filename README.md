@@ -1,10 +1,11 @@
 
-built with
+ Ruby  2.6.3,Rails Rails 6.0.3.4
+ 
+ circleci  
+ 
+ docker　
+ 
+ Nginx 
+ 
+ React-native
 
-Ruby version 2.6.3   Rails 2.6.5
-
-circleci  
-
-docker　Nginx UNicorn
-
-React-native 
