@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'database_cleaner', '~> 1.8', '>= 1.8.5'
+  gem 'shoulda-matchers', '~> 4.4', '>= 4.4.1'
 end
 
 group :development do
@@ -49,4 +51,6 @@ gem 'rubocop', '~> 0.93.1'
 gem 'rubocop-performance', '~> 1.8', '>= 1.8.1'
 gem 'rubocop-rails', '~> 2.8', '>= 2.8.1'
 gem 'rubocop-rspec', '~> 1.43', '>= 1.43.2'
+gem 'webpacker', '~> 5.2', '>= 5.2.1'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
