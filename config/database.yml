@@ -16,7 +16,7 @@ default: &default
   port: <%= ENV['DB_PORT'] || '13306' %>
   username: <%= ENV["DB_USER"] ||'mysql' %>
   password: <%= ENV["DB_PASSWORD"] || 'mysql' %>
-  database: test_portfolio_development
+  database: test_portfolio
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 
